@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cadastro</title>
+</head>
+<body>
+    <h1>Formulario de Cadastro</h1>
+
+    <style>
+        #form {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+
+            input {
+                padding: 0.5vw;
+            }
+        }
+
+        #campos {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+        }
+    </style>
+    
+
+    <form id="form">
+        <div id="campos">
+        <label>Nome : <input type="text" name="nome" id="nome" placeholder="Nome"></label>
+        <label>Email : <input type="email" name="email" id="email" placeholder="Email"></label>
+        <label>Senha : <input type="password" name="senha" id="senha" placeholder="Senha"></label> 
+    </div>
+    <input type="submit" value="Cadastrar" style="width: 100px;">
+    </form>
+</body>
+</html>
